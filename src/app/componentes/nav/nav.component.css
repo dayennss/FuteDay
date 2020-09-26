@@ -1,0 +1,25 @@
+.Logo a {
+    color: #eb7400;
+    display: flex;
+    font-size: 2rem;
+}
+.Logo img {
+    width: 30px;
+    background-color: #fff;
+    border-radius:100%;
+    margin:0px 5px
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;;
+}
+.menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #eb7400;
+    font-size: 1.5rem;
+
+}
