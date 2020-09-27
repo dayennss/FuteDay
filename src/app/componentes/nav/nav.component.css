@@ -1,6 +1,4 @@
 .Logo a {
-    color: #eb7400;
-    display: flex;
     font-size: 2rem;
 }
 .Logo img {
@@ -19,7 +17,6 @@
 .menu a {
     text-decoration: none;
     margin: 0 10px;
-    color: #eb7400;
     font-size: 1.5rem;
 
 }
