@@ -10,7 +10,7 @@ import { retry, catchError } from 'rxjs/operators';
 export class CampeonatosService implements OnInit {
 
 
-  key = 'test_72d6c1f813c4370bf736940c968170'
+  key = 'Bearer test_72d6c1f813c4370bf736940c968170'
   url = 'https://api.api-futebol.com.br/v1/campeonatos'
 
   constructor(private httpClient:HttpClient) { }

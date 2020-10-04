@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Campeonatos } from './models-campeonatos/campeonatos';
-import { CampeonatosService} from './services/campeonatos.service'
+import {MatCardModule} from '@angular/material/card'
 
 @Component({
   selector: 'app-root',
@@ -10,23 +9,12 @@ import { CampeonatosService} from './services/campeonatos.service'
 export class AppComponent implements OnInit {
   title = 'FuteDay';
 
-  campeonato = {} as Campeonatos
-  campeonatos: Campeonatos[]
-  
-  constructor(private campeonatosService: CampeonatosService) {
-
+  constructor() {
   }
 
   ngOnInit() {
-    this.getCampeonato()
+
   }
 
-  // Chama o serviço para obtém todos os carros
-  getCampeonato() {
-    this.campeonatosService.getCampeonato().subscribe((campeonatos: Campeonatos[]) => {
-      this.campeonatos = campeonatos
-      console.log(campeonatos)
-    });
-  }
 
 }
