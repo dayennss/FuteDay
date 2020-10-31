@@ -2,10 +2,11 @@
 
 .titulo h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20pt;
-    margin:0 auto;
+    font-size: 30pt;
+    text-align:center;
+    padding:20px;
 }
-
+/* 
 .card-group {
     margin: 0 auto;
     width: 70%;
@@ -13,8 +14,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
-}
-
+} */
+/* 
 .img-brasileiro {
     width: 300px;
-}
+} */

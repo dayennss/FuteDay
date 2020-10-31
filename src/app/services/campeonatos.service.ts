@@ -16,7 +16,7 @@ export class CampeonatosService implements OnInit {
   // url = 'https://api.api-futebol.com.br/v1/campeonatos'
 
   Acessos = {
-    endpoint: 'https://api.football-data.org/v2/competitions/2013',
+    endpoint: 'https://api.football-data.org/v2/competitions/',
     token: '8bf4feb4dcaf44fe83bc85e01bb5da31'
   }
 
@@ -26,9 +26,9 @@ export class CampeonatosService implements OnInit {
   httpOptions = {
     headers: new HttpHeaders({'X-Auth-Token': this.Acessos.token})
   }
-  
-  getAllCampeonatos (): Observable<Campeonatos2> {
-    return this.httpClient.get<Campeonatos2>(this.Acessos.endpoint, this.httpOptions)
+
+  getCampeonatoById (idCampeonato:number): Observable<Campeonatos2> {
+    return this.httpClient.get<Campeonatos2>(this.Acessos.endpoint + "/" + idCampeonato, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError))

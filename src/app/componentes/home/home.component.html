@@ -3,21 +3,41 @@
 </div>
 
 
-<div class="card-group">
+
+
+<div class="card-group container">
   
-  <div class="brasileirao">
-    <mat-card> 
-      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
-      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
-      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-    </mat-card>
+  <div *ngFor=" let campeonato of campeonatos" class="row">
+    <div class="brasileirao col s1 ">
+      <mat-card> 
+        <img class="img-brasileiro img-responsive" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
+        <a href="">
+          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+        </a> 
+      </mat-card>
+    
+    </div>
+  </div>  
+
+  <!-- <div class="brasileirao">
+      <mat-card> 
+        <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
+        <a href="">
+          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+        </a>
+      </mat-card>
+    
   </div>
 
   <div class="copabrasil">
     <mat-card> 
       <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
       <mat-card-title> {{campeonato.name}}  </mat-card-title> 
-      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+      <a href="">
+        <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+      </a>
     </mat-card>
   </div>
 
@@ -25,9 +45,11 @@
     <mat-card> 
       <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
       <mat-card-title> {{campeonato.name}}  </mat-card-title> 
-      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+      <a href="">
+        <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+      </a>
     </mat-card>
-  </div>
+  </div> -->
 
 </div>
 

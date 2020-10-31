@@ -9,17 +9,22 @@ import { CampeonatosService } from 'src/app/services/campeonatos.service';
 })
 export class HomeComponent implements OnInit {
 
+  idCampeonatos =  [2013,2013,2013,2013,2013]
   campeonato = {} as Campeonatos2
-  
+  campeonatos: Campeonatos2[] = []
+   
   constructor(private campeonatosService: CampeonatosService) { }
   ngOnInit() {
     this.getAllCampeonatos();
   }
   getAllCampeonatos() {
-    this.campeonatosService.getAllCampeonatos().subscribe((campeonatos:Campeonatos2) => {
-      this.campeonato = campeonatos
-      console.log(this.campeonato)
-    })
+    this.idCampeonatos.forEach(element => {
+      this.campeonatosService.getCampeonatoById(element).subscribe((campeonatos:Campeonatos2) => {
+        this.campeonatos.push(campeonatos)
+      })  
+    });
+
+    
   }
   
 
