@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Campeonatos } from 'src/app/models-campeonatos/campeonatos';
+import { Campeonatos, Campeonatos2 } from 'src/app/models-campeonatos/campeonatos';
 import { CampeonatosService } from 'src/app/services/campeonatos.service';
 
 @Component({
@@ -9,19 +9,27 @@ import { CampeonatosService } from 'src/app/services/campeonatos.service';
 })
 export class HomeComponent implements OnInit {
 
-  campeonato = {} as Campeonatos
-  campeonatos: Campeonatos[]
-
+  campeonato = {} as Campeonatos2
+  
   constructor(private campeonatosService: CampeonatosService) { }
   ngOnInit() {
-    this.getCampeonato()
+    this.getAllCampeonatos();
   }
+  getAllCampeonatos() {
+    this.campeonatosService.getAllCampeonatos().subscribe((campeonatos:Campeonatos2) => {
+      this.campeonato = campeonatos
+      console.log(this.campeonato)
+    })
+  }
+  
 
-  // Chama o serviço para obtém todos os campeonatos.
-  getCampeonato() {
-    this.campeonatosService.getCampeonato().subscribe((campeonatos: Campeonatos[]) => {
-      this.campeonatos = campeonatos
-      console.log(campeonatos)
-    });
-  }
+
+
+  // // Chama o serviço para obtém todos os campeonatos.
+  // getCampeonato() {
+  //   this.campeonatosService.getCampeonato().subscribe((campeonatos: Campeonatos[]) => {
+  //     this.campeonatos = campeonatos
+  //     console.log(campeonatos)
+  //   });
+  // }
 }

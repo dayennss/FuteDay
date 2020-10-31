@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders,HttpErrorResponse } from '@angular/common/http'
 import { Injectable, OnInit } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { Campeonatos } from '../models-campeonatos/campeonatos';
+import { Campeonatos2 } from '../models-campeonatos/campeonatos';
 import { retry, catchError } from 'rxjs/operators';
 
 @Injectable({
@@ -10,17 +11,24 @@ import { retry, catchError } from 'rxjs/operators';
 export class CampeonatosService implements OnInit {
 
 
-  key = 'Bearer test_72d6c1f813c4370bf736940c968170'
-  url = 'https://api.api-futebol.com.br/v1/campeonatos'
+  //  antigo  endpoint
+  // key = 'Bearer test_72d6c1f813c4370bf736940c968170'
+  // url = 'https://api.api-futebol.com.br/v1/campeonatos'
 
+  Acessos = {
+    endpoint: 'https://api.football-data.org/v2/competitions/2013',
+    token: '8bf4feb4dcaf44fe83bc85e01bb5da31'
+  }
+
+  
   constructor(private httpClient:HttpClient) { }
 
   httpOptions = {
-    headers: new HttpHeaders({'Authorization': this.key})
+    headers: new HttpHeaders({'X-Auth-Token': this.Acessos.token})
   }
   
-  getCampeonato(): Observable<Campeonatos[]> {
-    return this.httpClient.get<Campeonatos[]>(this.url, this.httpOptions)
+  getAllCampeonatos (): Observable<Campeonatos2> {
+    return this.httpClient.get<Campeonatos2>(this.Acessos.endpoint, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError))
@@ -41,11 +49,7 @@ export class CampeonatosService implements OnInit {
   };
 
   ngOnInit() {
-    this.getCampeonatos();
-  }
-
-  getCampeonatos() {
-
+    
   }
 
 }

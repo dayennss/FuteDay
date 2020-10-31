@@ -1,8 +1,39 @@
+<div class="titulo">
+    <h1> Dados sobre o mundo do futebol em tempo real</h1>
+</div>
 
 
-<mat-card *ngFor="let campeonato of campeonatos">
-  {{campeonato.nome}}
-</mat-card>
+<div class="card-group">
+  
+  <div class="brasileirao">
+    <mat-card> 
+      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
+      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+    </mat-card>
+  </div>
+
+  <div class="copabrasil">
+    <mat-card> 
+      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
+      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+    </mat-card>
+  </div>
+
+  <div class="serie-b">
+    <mat-card> 
+      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
+      <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+    </mat-card>
+  </div>
+
+</div>
+
+
+  <!-- {{campeonato.name}} -->
+
 
 
   
