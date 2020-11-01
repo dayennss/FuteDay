@@ -58,7 +58,7 @@ node_modules/@angular-devkit/architect/package.json
 node_modules/@angular-devkit/architect/README.md
 node_modules/@angular-devkit/architect/builders/all-of.d.ts
 node_modules/@angular-devkit/architect/builders/all-of.js
-node_modules/@angular-devkit/architect/builders/builders.json
+# node_modules/@angular-devkit/architect/builders/builders.json
 node_modules/@angular-devkit/architect/builders/concat.d.ts
 node_modules/@angular-devkit/architect/builders/concat.js
 node_modules/@angular-devkit/architect/builders/false.d.ts
@@ -72,7 +72,7 @@ node_modules/@angular-devkit/architect/builders/true.js
 node_modules/@angular-devkit/architect/node/BUILD.bazel
 node_modules/@angular-devkit/architect/node/index.d.ts
 node_modules/@angular-devkit/architect/node/index.js
-node_modules/@angular-devkit/architect/node/node-modules-architect-host.d.ts
+# node_modules/@angular-devkit/architect/node/node-modules-architect-host.d.ts
 node_modules/@angular-devkit/architect/node/node-modules-architect-host.js
 node_modules/@angular-devkit/architect/node_modules/rxjs/AsyncSubject.d.ts
 node_modules/@angular-devkit/architect/node_modules/rxjs/AsyncSubject.js
@@ -3691,7 +3691,7 @@ node_modules/@angular-devkit/architect/node_modules/rxjs/webSocket/index.js
 node_modules/@angular-devkit/architect/node_modules/rxjs/webSocket/index.js.map
 node_modules/@angular-devkit/architect/node_modules/rxjs/webSocket/package.json
 node_modules/@angular-devkit/architect/node_modules/tslib/CopyrightNotice.txt
-node_modules/@angular-devkit/architect/node_modules/tslib/LICENSE.txt
+node_modules/@angular-devkitf/architect/node_modules/tslib/LICENSE.txt
 node_modules/@angular-devkit/architect/node_modules/tslib/package.json
 node_modules/@angular-devkit/architect/node_modules/tslib/README.md
 node_modules/@angular-devkit/architect/node_modules/tslib/tslib.d.ts
