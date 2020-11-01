@@ -3733,7 +3733,7 @@ node_modules/@angular-devkit/architect/testing/test-project-host.d.ts
 node_modules/@angular-devkit/architect/testing/test-project-host.js
 node_modules/@angular-devkit/architect/testing/testing-architect-host.d.ts
 node_modules/@angular-devkit/architect/testing/testing-architect-host.js
-node_modules/@angular-devkit/build-angular/builders.json
+# node_modules/@angular-devkit/build-angular/builders.json
 node_modules/@angular-devkit/build-angular/LICENSE
 node_modules/@angular-devkit/build-angular/README.md
 node_modules/@angular-devkit/build-angular/node_modules/@angular-devkit/architect/LICENSE
