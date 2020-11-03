@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
-nav {
-    background-color: #fff;
-}
 
-.Logo a {
-    font-size: 2rem;
+.nav {
+    /* background-color: red;; */
+    padding-top: 30px;
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     background-color: #fff;
-    border-radius:100%;
-    margin:10px
+    position: relative;
+    top: 10px;;
+}
+
+.brand-logo {
+    margin:30px
 }
 
 .brand-logo span {
-    font-size: 60px;
+    font-size: 30pt;
     font-family: 'Reenie Beanie', cursive;
     color: #000;
 }
@@ -25,15 +28,23 @@ nav {
     color:#FFAB40;
 }
 
+
 .menu {
+    position: relative;
+    top: -10px; 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;;
+    justify-content: flex-end; 
+    /* background-color: yellow;; */
 }
+
 .menu a {
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5rem;
-
+    font-size: 18pt;   
+    padding: 0px 30px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:#000;
+}   
+.menu a:first-child {
+    color:#FFAB40;
+    text-decoration: underline;
 }

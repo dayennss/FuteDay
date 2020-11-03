@@ -1,69 +1,18 @@
-<!-- <div class=" home">
-  <div class="titulo">
-    <h1>Dados sobre o mundo do futebol em tempo real.</h1>
+<br><br><br><br>
+
+<div class="container-home">
+  
+  <div class="list">
+    <div *ngFor=" let aa of InformacoesHome">
+      <div class="barras">
+        <div class="enumerador">{{aa.id}}</div>
+        <div class="frase"> {{aa.sentence}} </div>
+      </div>
+    </div>  
   </div>
 
-  <div class="card-group">
-    <div *ngFor=" let campeonato of campeonatos" class="campeonato">
-      <mat-card class="deep-orange lighten-1"> 
-        <img class="img-campeonato img-responsive" mat-card-image src="assets/brasileirao.png">
-        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
-        <a href="">
-          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-        </a> 
-      </mat-card>
-    </div>
+  <div class="img-player">
+    <img src="assets/player.png" alt="">
   </div>
 
 </div>
-
-<div class="card-group row">
-  
-  <div *ngFor=" let campeonato of campeonatos" class="">
-    <div class="brasileirao col s3 offset-s4 center-align">
-      <mat-card> 
-        <img class="img-brasileiro img-responsive" mat-card-image src="assets/brasileirao.png">
-        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
-        <a href="">
-          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-        </a> 
-      </mat-card>
-    
-    </div>
-  </div>  
-
-  <div class="brasileirao">
-      <mat-card> 
-        <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
-        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
-        <a href="">
-          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-        </a>
-      </mat-card>
-    
-  </div>
-
-  <div class="copabrasil">
-    <mat-card> 
-      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
-      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
-      <a href="">
-        <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-      </a>
-    </mat-card>
-  </div>
-
-  <div class="serie-b">
-    <mat-card> 
-      <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
-      <mat-card-title> {{campeonato.name}}  </mat-card-title> 
-      <a href="">
-        <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
-      </a>
-    </mat-card>
-  </div> -->
-
-<!-- </div>
-
-
-  {{campeonato.name}} --> 

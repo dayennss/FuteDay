@@ -1,8 +1,8 @@
 import { HttpClient, HttpHeaders,HttpErrorResponse } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { Campeonatos } from '../models-campeonatos/campeonatos';
-import { Campeonatos2 } from '../models-campeonatos/campeonatos';
+import { Campeonatos } from '../models-campeonatos/campeonato/campeonatos';
+import { Campeonatos2 } from '../models-campeonatos/campeonato/campeonatos';
 import { retry, catchError } from 'rxjs/operators';
 
 @Injectable({
