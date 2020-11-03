@@ -1,16 +1,28 @@
-<div class="titulo">
-    <h1> Dados sobre o mundo do futebol em tempo real</h1>
+<!-- <div class=" home">
+  <div class="titulo">
+    <h1>Dados sobre o mundo do futebol em tempo real.</h1>
+  </div>
+
+  <div class="card-group">
+    <div *ngFor=" let campeonato of campeonatos" class="campeonato">
+      <mat-card class="deep-orange lighten-1"> 
+        <img class="img-campeonato img-responsive" mat-card-image src="assets/brasileirao.png">
+        <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
+        <a href="">
+          <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
+        </a> 
+      </mat-card>
+    </div>
+  </div>
+
 </div>
 
-
-
-
-<div class="card-group container">
+<div class="card-group row">
   
-  <div *ngFor=" let campeonato of campeonatos" class="row">
-    <div class="brasileirao col s1 ">
+  <div *ngFor=" let campeonato of campeonatos" class="">
+    <div class="brasileirao col s3 offset-s4 center-align">
       <mat-card> 
-        <img class="img-brasileiro img-responsive" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
+        <img class="img-brasileiro img-responsive" mat-card-image src="assets/brasileirao.png">
         <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
         <a href="">
           <mat-card-subtitle> Clique para conferir </mat-card-subtitle>
@@ -20,7 +32,7 @@
     </div>
   </div>  
 
-  <!-- <div class="brasileirao">
+  <div class="brasileirao">
       <mat-card> 
         <img class="img-brasileiro" mat-card-image src="https://lh3.googleusercontent.com/proxy/XsB_D5tnlEdl_yZN6RZ1Ccyje-TGkde2Wr-q0NgavXucdDA5abCzQf01LLXKgf-S4_KVcGpDDIbE8vi28zRzmjXdrZCHnujyMo4AvuyfJfp6">
         <mat-card-title> {{campeonatos.name}}  </mat-card-title> 
@@ -51,11 +63,7 @@
     </mat-card>
   </div> -->
 
-</div>
+<!-- </div>
 
 
-  <!-- {{campeonato.name}} -->
-
-
-
-  
+  {{campeonato.name}} --> 

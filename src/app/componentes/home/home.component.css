@@ -6,15 +6,27 @@
     text-align:center;
     padding:20px;
 }
-/* 
+
+.campeonato {
+    width: 350px;
+}
+
+
 .card-group {
-    margin: 0 auto;
-    width: 70%;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
+}
+
+/* .center-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 } */
+
+
 /* 
 .img-brasileiro {
     width: 300px;

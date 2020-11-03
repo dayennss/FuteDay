@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+nav {
+    background-color: #fff;
+}
+
 .Logo a {
     font-size: 2rem;
 }
-.Logo img {
-    width: 30px;
+
+.logo {
+    width: 40px;
     background-color: #fff;
     border-radius:100%;
-    margin:0px 5px
+    margin:10px
+}
+
+.brand-logo span {
+    font-size: 60px;
+    font-family: 'Reenie Beanie', cursive;
+    color: #000;
+}
+
+.brand-logo .span-color {
+    color:#FFAB40;
 }
 
 .menu {

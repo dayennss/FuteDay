@@ -8,9 +8,6 @@ import { NavComponent } from './componentes/nav/nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {HttpClientModule} from '@angular/common/http'
 import {MatCardModule} from '@angular/material/card'
-// import {} from ''
-
-// footballdataFactoryf
 
 @NgModule({
   declarations: [

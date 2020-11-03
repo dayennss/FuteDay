@@ -9,7 +9,7 @@ import { CampeonatosService } from 'src/app/services/campeonatos.service';
 })
 export class HomeComponent implements OnInit {
 
-  idCampeonatos =  [2013,2013,2013,2013,2013]
+  idCampeonatos =  [2013]
   campeonato = {} as Campeonatos2
   campeonatos: Campeonatos2[] = []
    
