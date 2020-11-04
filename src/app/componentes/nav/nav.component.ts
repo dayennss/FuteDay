@@ -12,7 +12,7 @@ import { menuNav} from 'src/app/models-campeonatos/infos/infos-menu-nav';
 export class NavComponent implements OnInit {
 
   LinksMenu: menuNav[] = []
-
+ 
   constructor() { 
      
   }
