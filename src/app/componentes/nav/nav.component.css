@@ -5,7 +5,14 @@
 .nav {
     /* background-color: red;; */
     padding-top: 30px;
-}
+    }
+
+/* .container-home { 
+    max-width: 85%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+} */
 
 .logo {
     width: 50px;
@@ -44,7 +51,12 @@
     font-family: 'Ropa Sans', sans-serif;
     color:#000;
 }   
-.menu a:first-child {
+/* .menu a:first-child {
     color:#FFAB40;
     text-decoration: underline;
+} */
+
+.active {
+    color:#FFAB40 !important;
+    text-decoration: underline!important;
 }

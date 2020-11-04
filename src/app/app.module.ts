@@ -7,13 +7,15 @@ import { HomeComponent } from './componentes/home/home.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {HttpClientModule} from '@angular/common/http'
-import {MatCardModule} from '@angular/material/card'
+import {MatCardModule} from '@angular/material/card';
+import { ArtilhariaComponent } from './componentes/artilharia/artilharia.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    ArtilhariaComponent
   ],
   imports: [
     BrowserModule,
