@@ -4,22 +4,19 @@ import { Observable, throwError } from 'rxjs';
 import { Campeonatos } from '../models-campeonatos/campeonato/campeonatos';
 import { Campeonatos2 } from '../models-campeonatos/campeonato/campeonatos';
 import { retry, catchError } from 'rxjs/operators';
+import { Artilharia } from '../models-campeonatos/artilharia/artilharia';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CampeonatosService implements OnInit {
 
-
-  //  antigo  endpoint
-  // key = 'Bearer test_72d6c1f813c4370bf736940c968170'
-  // url = 'https://api.api-futebol.com.br/v1/campeonatos'
-
   Acessos = {
     endpoint: 'https://api.football-data.org/v2/competitions/',
-    token: '8bf4feb4dcaf44fe83bc85e01bb5da31'
+    artilharia:'/scorers',
+    token: '8bf4feb4dcaf44fe83bc85e01bb5da31',
+    idCampeonato: 2013
   }
-
   
   constructor(private httpClient:HttpClient) { }
 
@@ -33,6 +30,18 @@ export class CampeonatosService implements OnInit {
         retry(2),
         catchError(this.handleError))
   }
+
+  getArtilharia():Observable<Artilharia>{
+    return this.httpClient.get<Artilharia>(this.Acessos.endpoint + "/" + this.Acessos.idCampeonato + this.Acessos.artilharia, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError))
+  }
+
+
+
+
+
 
    // Manipulação de erros
    handleError(error: HttpErrorResponse) {
