@@ -22,31 +22,43 @@ export class NavComponent implements OnInit {
       {
         id: 1,
         title: "Inicio",
-        enable: false
+        router: "/",
+        enable: false, 
+        
       },
       {
         id:2,
         title:"Campeonato",
+        router: "/campeonato",
         enable: true
       },
       {
         id:3,
         title:"Artilharia",
+        router: "/artilharia",
         enable: false
       },
       {
         id:4,
         title:"Jogos",
+        router: "/",
         enable: false
       },  
       {
         id:5,
         title:"Tabela",
+        router: "/",
         enable: false
       }
       
     ]
-  
+  }
+
+  changeClassMenu(idLink:number):void {
+    this.LinksMenu.forEach(element => {
+      element.enable = false;
+    });
+    this.LinksMenu[idLink-1].enable = true
   }
 
 }

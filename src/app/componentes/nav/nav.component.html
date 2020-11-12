@@ -4,31 +4,10 @@
         <img src="assets/bola-de-futebol.svg" class="logo">  <span> Fute<span class="span-color">Day</span></span> 
     </a>
     <span class="menu">
-      <a *ngFor="let i of LinksMenu"routerLink="/" [class.active]="i.enable">  {{i.title}}</a> 
+      <a *ngFor="let i of LinksMenu" [routerLink]='i.router' [class.active]="i.enable" (click)="changeClassMenu(i.id)">  {{i.title}}</a> 
     </span>
-    <!-- <span class="menu">
-      <a mat-list-item routerLink="/"> Inicio</a>
-      <a mat-list-item routerLink="/"> Campeonato</a>
-      <a mat-list-item routerLink="/artilharia"> Artilharia</a>
-      <a mat-list-item routerLink="/"> Jogos</a>
-      <a mat-list-item routerLink="/"> Tabela</a>
-    </span> -->
   </div>
 
   <div class="container-home">
     <router-outlet></router-outlet>
   </div>
-
-
-
-
-<!-- <mat-toolbar class="header mat-elevation-z4"> 
-    <span class="Logo">
-        <a> <img src="assets/bola-de-futebol.svg">  FuteDay </a>
-    </span>
-    <span class="menu"> 
-        <a>Campeonato Brasileiro</a>
-        <a>Copa do Brasil</a>
-    </span>
-</mat-toolbar>
-   -->
