@@ -12,10 +12,11 @@ import { Artilharia } from '../models-campeonatos/artilharia/artilharia';
 export class CampeonatosService implements OnInit {
 
   Acessos = {
-    endpoint: 'https://api.football-data.org/v2/competitions/',
+    endpoint: 'https://api.football-data.org/v2',
+    campeonato: '/competitions',
     artilharia:'/scorers',
-    token: '8bf4feb4dcaf44fe83bc85e01bb5da31',
-    idCampeonato: 2013
+    idCampeonato: '/2013',
+    token: '8bf4feb4dcaf44fe83bc85e01bb5da31'
   }
   
   constructor(private httpClient:HttpClient) { }
@@ -32,7 +33,8 @@ export class CampeonatosService implements OnInit {
   }
 
   getArtilharia():Observable<Artilharia>{
-    return this.httpClient.get<Artilharia>(this.Acessos.endpoint + "/" + this.Acessos.idCampeonato + this.Acessos.artilharia, this.httpOptions)
+    console.log(this.Acessos.endpoint + "/" + this.Acessos.idCampeonato + this.Acessos.artilharia)
+    return this.httpClient.get<Artilharia>(this.Acessos.endpoint +this.Acessos.campeonato + this.Acessos.idCampeonato + this.Acessos.artilharia, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError))

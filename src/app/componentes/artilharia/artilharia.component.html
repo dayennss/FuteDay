@@ -2,6 +2,26 @@
     {{aa.player.name}}
 </div> -->
 
-<div>
+<div class="container-tabela-artilharia center-block">
     
+    
+    <table>
+        <tbody>
+            <!-- <tr *ngFor="let art of artilharia"> {{art.player.name}}</tr>-->
+            <tr *ngFor="let art of artilharia">
+                <td> {{art.player.name}}</td>
+                <td> {{art.numberOfGoals}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- <div *ngFor="let art of artilharia" class="row">
+      <div class="nome-jogador col s6">
+            {{art.player.name}}
+      </div>  
+      <div class="qtd-gols col s6">
+            {{art.numberOfGoals}}
+      </div>
+    </div> -->
 </div>
+

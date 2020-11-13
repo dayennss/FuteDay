@@ -23,14 +23,14 @@ export class NavComponent implements OnInit {
         id: 1,
         title: "Inicio",
         router: "/",
-        enable: false, 
+        enable: true, 
         
       },
       {
         id:2,
         title:"Campeonato",
         router: "/campeonato",
-        enable: true
+        enable: false
       },
       {
         id:3,
