@@ -4,16 +4,41 @@
 
 <div class="container-tabela-artilharia center-block">
     
-    
+
+    <div *ngFor="let art of infoTeamArtilharia" class="container-itens">
+        <div>
+            <img src="{{art.urlFoto}}" class="img-time-jogador" >
+        </div>
+
+        <div class="nome-jogador">
+            <span>{{art.nomeJogador}}</span><br>
+            <span class="nome-jogador-detalhes">Detalhes</span>
+        </div>
+
+        <div class="gols-jogador">
+            <span>{{art.Gols}}</span> <br>
+            
+            <span class="gol-palavra" *ngIf="art.Gols > 1"> Gols</span>
+            <span class="gol-palavra" *ngIf="art.Gols === 1"> Gol</span>
+        </div>
+    </div>
+
+
+<!--     
     <table>
+        <thead>
+            <td> Rancking </td>
+            <td> </td>
+            <td> Gols </td>
+        </thead>
         <tbody>
-            <!-- <tr *ngFor="let art of artilharia"> {{art.player.name}}</tr>-->
-            <tr *ngFor="let art of artilharia">
-                <td> {{art.player.name}}</td>
-                <td> {{art.numberOfGoals}}</td>
+            <tr *ngFor="let art of infoTeamArtilharia">
+                <td> <img src="{{art.urlFoto}}" class="img-time-jogador"> </td>
+                <td class="nome-jogador"> {{art.nomeJogador}}</td> 
+                <td class="gols-qtd"> {{art.Gols}}</td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
     
     <!-- <div *ngFor="let art of artilharia" class="row">
       <div class="nome-jogador col s6">

@@ -1,8 +1,45 @@
 .container-tabela-artilharia{
-    display: inline
+    padding: 5%;
 }
 
-.center-block {
-    display: block;
-    margin: 0 auto;
+.gols-qtd {
+    font-size: 2rem;
 }
+
+.nome-jogador {
+    color: #333;
+}
+
+.nome-jogador-detalhes {
+    color: #888;
+    font-size:10pt
+}
+
+.img-time-jogador {
+    width: 3.5rem;
+    margin:10px;
+}
+.container-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 15pt;
+    margin:10px;
+    align-items: center;    
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+.container-itens .gols-jogador {
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.gols-jogador .gol-palavra {
+    font-size: 11pt;
+    font-weight: 100;
+} 
+
+.nome-jogador {
+    width: 80%;;
+}
+ 
