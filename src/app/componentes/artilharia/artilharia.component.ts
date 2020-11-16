@@ -37,6 +37,7 @@ export class ArtilhariaComponent implements OnInit {
           nome: element.team.name,
           Gols: element.numberOfGoals,
           nomeJogador: element.player.name,
+          posicaoJogador: element.player.position
         })
       })
       this.getThumbTime();

@@ -5,4 +5,5 @@ export interface  InformacaoTeamArtilharia {
     urlFoto?: string,
     Gols: number, 
     nomeJogador:string
+    posicaoJogador:string
 }

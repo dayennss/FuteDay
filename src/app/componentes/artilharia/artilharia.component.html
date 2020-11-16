@@ -3,50 +3,30 @@
 </div> -->
 
 <div class="container-tabela-artilharia center-block">
-    
+
+    <div class="barra-de-informacoes">
+        <div class="refresh"> <a> <i class="Large material-icons ">refresh</i> </a> </div>
+    </div>
 
     <div *ngFor="let art of infoTeamArtilharia" class="container-itens">
+        <!-- foto dos times  -->
         <div>
             <img src="{{art.urlFoto}}" class="img-time-jogador" >
         </div>
 
+        <!-- nome do jogador  -->
         <div class="nome-jogador">
             <span>{{art.nomeJogador}}</span><br>
-            <span class="nome-jogador-detalhes">Detalhes</span>
+            <span class="nome-jogador-detalhes" *ngIf="art.posicaoJogador === 'Attacker' "> Atacante </span>
+            <span class="nome-jogador-detalhes" *ngIf="art.posicaoJogador === 'Midfielder' "> Meia </span> 
         </div>
 
+        <!-- qtd de gols de cada jogador  -->
         <div class="gols-jogador">
             <span>{{art.Gols}}</span> <br>
-            
             <span class="gol-palavra" *ngIf="art.Gols > 1"> Gols</span>
             <span class="gol-palavra" *ngIf="art.Gols === 1"> Gol</span>
         </div>
     </div>
-
-
-<!--     
-    <table>
-        <thead>
-            <td> Rancking </td>
-            <td> </td>
-            <td> Gols </td>
-        </thead>
-        <tbody>
-            <tr *ngFor="let art of infoTeamArtilharia">
-                <td> <img src="{{art.urlFoto}}" class="img-time-jogador"> </td>
-                <td class="nome-jogador"> {{art.nomeJogador}}</td> 
-                <td class="gols-qtd"> {{art.Gols}}</td>
-            </tr>
-        </tbody>
-    </table> -->
-    
-    <!-- <div *ngFor="let art of artilharia" class="row">
-      <div class="nome-jogador col s6">
-            {{art.player.name}}
-      </div>  
-      <div class="qtd-gols col s6">
-            {{art.numberOfGoals}}
-      </div>
-    </div> -->
 </div>
 
