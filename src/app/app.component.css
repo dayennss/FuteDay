@@ -1,3 +1,30 @@
 body {
     overflow-x: hidden;
 }
+
+:host ::ng-deep .container-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 15pt;
+    margin:10px;
+    align-items: center;    
+    width: 100%;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+:host ::ng-deep .container-geral {
+    padding: 10%;
+}
+
+
+:host ::ng-deep .refresh i {
+    color:#FFAB40;
+    font-size: 3rem;
+}
+:host ::ng-deep .refresh {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+

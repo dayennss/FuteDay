@@ -1,5 +1,5 @@
 .container-tabela-artilharia{
-    padding: 10%;
+    /* padding: 10%; */
 }
 
 .gols-qtd {
@@ -19,16 +19,7 @@
     width: 3.5rem;
     margin:10px;
 }
-.container-itens {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: 15pt;
-    margin:10px;
-    align-items: center;    
-    width: 100%;
-    border-bottom: 1px solid #c3c3c3;
-}
+
 .container-itens .gols-jogador {
     font-size: 18pt;
     font-weight: 800;

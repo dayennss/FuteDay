@@ -47,7 +47,7 @@ export class NavComponent implements OnInit {
       {
         id:5,
         title:"Tabela",
-        router: "/",
+        router: "/tabela",
         enable: false
       }
       

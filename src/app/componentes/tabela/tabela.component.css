@@ -1,0 +1,9 @@
+.img-time-tabela {
+    width: 3.5rem;
+    margin:10px;
+}
+
+.nome-posicao-na-tabela {
+    min-width: 30px;
+    font-size: 15pt;
+}

@@ -6,6 +6,7 @@ import { Campeonatos2 } from '../models-campeonatos/campeonato/campeonatos';
 import { retry, catchError } from 'rxjs/operators';
 import { Artilharia, TeamExternal } from '../models-campeonatos/artilharia/artilharia';
 import { InformacaoTeamArtilharia } from '../models-campeonatos/infos/info-time-artilharia';
+import { ClassificacaoMacro } from '../models-campeonatos/classificacao/classificacao';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,7 @@ export class CampeonatosService implements OnInit {
     artilharia:'/scorers',
     times: '/teams',
     idCampeonato: '/2013',
+    classificacao: '/standings',
     token: '8bf4feb4dcaf44fe83bc85e01bb5da31'
   }
   
@@ -43,7 +45,20 @@ export class CampeonatosService implements OnInit {
 
   getThumbTime(TimeID: number) : Observable<TeamExternal> {
     return this.httpClient.get<TeamExternal>(this.Acessos.endpoint+ this.Acessos.times + "/" + TimeID, this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError))
   }
+
+
+  getClassificacao():Observable<ClassificacaoMacro> {
+    return this.httpClient.get<ClassificacaoMacro>(this.Acessos.endpoint + this.Acessos.campeonato + this.Acessos.idCampeonato + this.Acessos.classificacao, this.httpOptions)
+    .pipe(
+      retry(2),
+      catchError(this.handleError))
+
+  }
+
 
    // Manipulação de erros
    handleError(error: HttpErrorResponse) {

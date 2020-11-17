@@ -8,14 +8,16 @@ import { NavComponent } from './componentes/nav/nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {HttpClientModule} from '@angular/common/http'
 import {MatCardModule} from '@angular/material/card';
-import { ArtilhariaComponent } from './componentes/artilharia/artilharia.component'
+import { ArtilhariaComponent } from './componentes/artilharia/artilharia.component';
+import { TabelaComponent } from './componentes/tabela/tabela.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    ArtilhariaComponent
+    ArtilhariaComponent,
+    TabelaComponent
   ],
   imports: [
     BrowserModule,
