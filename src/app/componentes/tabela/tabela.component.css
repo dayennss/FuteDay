@@ -1,9 +1,20 @@
 .img-time-tabela {
-    width: 3.5rem;
-    margin:10px;
+    width: 1.5rem;
+    /* margin:10px; */
 }
 
-.nome-posicao-na-tabela {
-    min-width: 30px;
-    font-size: 15pt;
+.tdImg img {
+    width: 15px;
 }
+
+
+/* td 
+{
+    height: 50px; 
+    width: 50px;
+}
+
+.tabela-classificacao td 
+{
+    vertical-align: middle;
+} */

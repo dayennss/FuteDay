@@ -28,3 +28,11 @@ body {
     justify-content: flex-end;
 }
 
+:host ::ng-deep .titulo-informacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 10pt;
+    margin:10px;
+    align-items: center;    
+}

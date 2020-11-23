@@ -1,27 +1,44 @@
-
 <div class="container-tabela container-geral center-block">
 
     <div class="barra-de-informacoes">
         <div class="refresh"> <a> <i class="Large material-icons ">refresh</i> </a> </div>
     </div>
 
-    <div *ngFor="let tab of info" class="container-itens">
 
-        <!-- nome do jogador  -->
-        <div class="nome-posicao-na-tabela">
-            <span>{{tab.position}}</span><br>
-        </div>
 
-        <!-- foto dos times  -->
-        <div>
-            <img src="{{tab.team.crestUrl}}" class="img-time-tabela" >
-        </div>
+    <table class="tabela-classificacao">
+        <thead>
+            <tr>
+                <td colspan="2">TIMES</td>
+                <td>PTS</td>
+                <td>PJ</td>
+                <td>VT</td>
+                <td>DER</td>
+                <td>EMP</td>
+                <td>GP</td>
+                <td>GC</td>
+                <td>SG</td>
+                <td>Utimas 5 partidas</td>
+            </tr>
+        </thead>
 
-        <!-- qtd de gols de cada jogador  -->
-        <div class="nome-time">
-            <span>{{tab.team.name}}</span> <br>
-        </div>
-    </div>
+        <tbody>
+            <tr *ngFor="let tab of info">
+                <td>{{tab.position}}</td>
+                <td> <img src="{{tab.team.crestUrl}}" class="img-time-tabela">{{tab.team.name}} </td>
+                <td>{{tab.points}}</td>
+                <td>{{tab.playedGames}}</td>
+                <td>{{tab.won}}</td>
+                <td>{{tab.lost}}</td>
+                <td>{{tab.draw}}</td>
+                <td>{{tab.goalsFor}}</td>
+                <td>{{tab.goalsAgainst}}</td>
+                <td>{{tab.goalDifference}}</td>
+                <td [innerHTML]="tab.form"></td> 
+                
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 

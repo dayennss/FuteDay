@@ -9,7 +9,8 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import {HttpClientModule} from '@angular/common/http'
 import {MatCardModule} from '@angular/material/card';
 import { ArtilhariaComponent } from './componentes/artilharia/artilharia.component';
-import { TabelaComponent } from './componentes/tabela/tabela.component'
+import { TabelaComponent } from './componentes/tabela/tabela.component';
+import { ConfiguracaoTabelaDirective } from './directives/configuracao-tabela.directive'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TabelaComponent } from './componentes/tabela/tabela.component'
     HomeComponent,
     NavComponent,
     ArtilhariaComponent,
-    TabelaComponent
+    TabelaComponent,
+    ConfiguracaoTabelaDirective
   ],
   imports: [
     BrowserModule,
