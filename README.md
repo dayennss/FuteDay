@@ -1,1 +1,1 @@
-Projeto iniciado com intuido divertido. 
+STATUS: PROJETO AINDA EM CONSTRUÇÃO.
