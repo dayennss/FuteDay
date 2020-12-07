@@ -46,3 +46,9 @@ export interface Sessao {
     currentMatchday: number,
     winner: string
 }
+
+
+export interface Legenda {
+    cor: string,
+    descricao: string
+}

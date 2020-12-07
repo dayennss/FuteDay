@@ -14,7 +14,7 @@ body {
 }
 
 :host ::ng-deep .container-geral {
-    padding: 10%;
+    padding: 6%;
 }
 
 

@@ -4,9 +4,7 @@
         <div class="refresh"> <a> <i class="Large material-icons ">refresh</i> </a> </div>
     </div>
 
-
-
-    <table class="tabela-classificacao">
+    <table class="tabela-classificacao highlight">
         <thead>
             <tr>
                 <td colspan="2">TIMES</td>
@@ -24,8 +22,8 @@
 
         <tbody>
             <tr *ngFor="let tab of info">
-                <td>{{tab.position}}</td>
-                <td> <img src="{{tab.team.crestUrl}}" class="img-time-tabela">{{tab.team.name}} </td>
+                <td ngClass="position-{{tab.position}}" >{{tab.position}}</td>
+                <td> <img src="{{tab.team.crestUrl}}" class="img-time-tabela"><span class="nome-time">{{tab.team.name}}</span> </td>
                 <td>{{tab.points}}</td>
                 <td>{{tab.playedGames}}</td>
                 <td>{{tab.won}}</td>
@@ -39,12 +37,10 @@
             </tr>
         </tbody>
     </table>
+
+    <div class="legenda">
+        <div *ngFor="let leg of legenda">
+            <div ngClass="{{leg.cor}}"></div> <span> {{leg.descricao}} </span>
+        </div>
+    </div>
 </div>
-
-
-<!-- <div *ngFor="let aa of info">
-    
-    <img class="img-time-tabela" src="{{aa.team.crestUrl}}">
-    {{aa.position}} 
-    {{aa.team.name}} 
-</div>  -->

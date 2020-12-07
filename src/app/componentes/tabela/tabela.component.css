@@ -1,20 +1,58 @@
 .img-time-tabela {
     width: 1.5rem;
-    /* margin:10px; */
 }
 
 .tdImg img {
     width: 15px;
 }
 
-
-/* td 
-{
-    height: 50px; 
-    width: 50px;
+.nome-time {
+    margin:10px;
+    position: relative;
+    top: -6px
 }
 
-.tabela-classificacao td 
-{
-    vertical-align: middle;
-} */
+.position-1, .position-2,.position-3, .position-4  {
+    border-left: 3px solid blue;
+}
+.position-5, .position-6 {
+    border-left: 3px solid orange;
+}
+.position-7, .position-8, .position-9, .position-10, .position-11, .position-12 {
+    border-left: 3px solid green;
+}
+
+.position-17, .position-18,.position-19, .position-20  {
+    border-left: 3px solid red;
+}
+
+.legenda {
+    margin: 20px 0 0 0 
+}
+
+.red {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+}
+
+.blue {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.orange {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    display: inline-block;
+}
+.green {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    display: inline-block;
+}
